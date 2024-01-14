@@ -49,9 +49,19 @@ ul {
     background-repeat: no-repeat;
     object-fit: cover;
 }
-/* .banner-img img{
-    text-align: center;
-} */
+.btn-primary{
+    background-color: #E02C6D;
+    padding: 4px;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+.marketplace{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
 
 
 
@@ -66,5 +76,11 @@ ul {
     }
   .banner img{
     width: 100%;
+  }
+  .marketplace{
+    
+    flex-direction: column;
+    gap: 4rem;
+   
   }
 }
