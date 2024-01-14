@@ -28,3 +28,43 @@ ul {
     padding: 1rem;
     color: #3A3A3A;
 }
+.banner{
+    display: flex;
+    gap: 5px;
+    padding-top: 3rem;
+    align-items: center;
+}
+.banner-title{
+    width: 50%;
+    color: #3A3A3A;
+}
+.banner-description{
+    width: 60%;
+    color: gray;
+}
+.banner-img{
+    background-image: url("/images/Circle\ design.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+/* .banner-img img{
+    text-align: center;
+} */
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .navbar, .banner{
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+  .banner img{
+    width: 100%;
+  }
+}
