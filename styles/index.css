@@ -27,7 +27,7 @@ ul {
     text-decoration: none;
     padding: 1rem;
     color: #3A3A3A;
-    font-weight: 600;
+    font-weight: 400;
 }
 .banner{
     display: flex;
@@ -52,13 +52,15 @@ ul {
 }
 .btn-primary{
     background-color: #E02C6D;
-    padding: 4px;
+    padding: 1rem;
+    font-size: 18px;
     color: white;
     border: none;
     margin-top: 1rem;
     border-radius: 12px;
 }
 .marketplace{
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -86,7 +88,34 @@ ul {
     width: 45%;
 }
 
+.feature{
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    
+}
+.feature-text{
+   margin-left: 8rem;
+}
 
+footer{
+    margin-top: 3rem;
+   color: white;
+    background-color: #0A0826;
+    height: 15rem;
+   
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding-top: 4rem;
+}
+.social-link{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
 
 
 
@@ -119,7 +148,15 @@ ul {
   .popular-items{
     grid-template-columns: repeat(1, 1fr);
   }
+  .feature{
+    flex-direction: column;
+  }
+  .feature-text{
+       margin-left: 0;
+  }
+ 
 }
+
 
 @media screen and (min-width: 576px) and (max-width: 992px){
     .marketplace{
@@ -129,6 +166,16 @@ ul {
    
     .popular-items{
         grid-template-columns: repeat(2, 1fr);
+      }
+      .feature{
+        display: flex;
+        flex-direction: column;
+      }
+      .feature-img img{
+        width: 100%;
+      }
+      .feature-text{
+        margin-left: 0;
       }
 }
 
